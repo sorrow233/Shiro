@@ -46,7 +46,11 @@ export const headerMenuConfig: IHeaderMenu[] = [
     icon: h(FaSolidFeatherAlt),
     exclude: ['/notes/topics'],
   },
-
+  {
+    title: '思考',
+    icon: h(MdiLightbulbOn20),
+    path: '/thinking',
+  },
   {
     title: '时光',
     icon: h(FaSolidHistory),
@@ -87,11 +91,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
     icon: h(FaSolidCircleNotch),
     path: '#',
     subMenu: [
-      {
-        title: '思考',
-        icon: h(MdiLightbulbOn20),
-        path: '/thinking',
-      },
       {
         title: '项目',
         icon: h(MdiFlask),
