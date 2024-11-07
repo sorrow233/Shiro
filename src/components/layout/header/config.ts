@@ -40,16 +40,16 @@ export const headerMenuConfig: IHeaderMenu[] = [
     icon: h(IcTwotoneSignpost),
   },
   {
+    title: '思考',
+    icon: h(MdiLightbulbOn20),
+    path: '/thinking',
+  },
+  {
     title: '手记',
     type: 'Note',
     path: '/notes',
     icon: h(FaSolidFeatherAlt),
     exclude: ['/notes/topics'],
-  },
-  {
-    title: '思考',
-    icon: h(MdiLightbulbOn20),
-    path: '/thinking',
   },
   {
     title: '时光',
@@ -87,6 +87,11 @@ export const headerMenuConfig: IHeaderMenu[] = [
     icon: h(FaSolidCircleNotch),
     path: '#',
     subMenu: [
+    {
+        title: '一言',
+        path: '/says',
+        icon: h(FaSolidComments),
+        },
       {
         title: '友链',
         icon: h(FaSolidUserFriends),
@@ -96,11 +101,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
         title: '项目',
         icon: h(MdiFlask),
         path:'/projects',
-      },
-      {
-        title: '一言',
-        path: '/says',
-        icon: h(FaSolidComments),
       },
       {
         title: '跃迁',
