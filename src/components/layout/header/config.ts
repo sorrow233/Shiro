@@ -52,34 +52,10 @@ export const headerMenuConfig: IHeaderMenu[] = [
     exclude: ['/notes/topics'],
   },
   {
-    title: '时光',
-    icon: h(FaSolidHistory),
-    path: '/timeline',
-    subMenu: [
-      {
-        title: '手记',
-        icon: h(FaSolidFeatherAlt),
-        path: '/timeline?type=note',
-      },
-      {
-        title: '文稿',
-        icon: h(IonBook),
-        path: '/timeline?type=post',
-      },
-      {
-        title: '回忆',
-        icon: h(FaSolidCircle),
-        path: '/timeline?memory=1',
-      },
-      {
-        title: '专栏',
-        path: '/notes/topics',
-        icon: h('i', {
-          className: 'i-mingcute-align-bottom-fill flex center',
-        }),
-      },
-    ],
-  },
+    title: '一言',
+    path: '/says',
+    icon: h(FaSolidComments),
+    },
 
 
   {
@@ -87,11 +63,35 @@ export const headerMenuConfig: IHeaderMenu[] = [
     icon: h(FaSolidCircleNotch),
     path: '#',
     subMenu: [
-    {
-        title: '一言',
-        path: '/says',
-        icon: h(FaSolidComments),
-        },
+      {
+        title: '时光',
+        icon: h(FaSolidHistory),
+        path: '/timeline',
+        subMenu: [
+          {
+            title: '手记',
+            icon: h(FaSolidFeatherAlt),
+            path: '/timeline?type=note',
+          },
+          {
+            title: '文稿',
+            icon: h(IonBook),
+            path: '/timeline?type=post',
+          },
+          {
+            title: '回忆',
+            icon: h(FaSolidCircle),
+            path: '/timeline?memory=1',
+          },
+          {
+            title: '专栏',
+            path: '/notes/topics',
+            icon: h('i', {
+              className: 'i-mingcute-align-bottom-fill flex center',
+            }),
+          },
+        ],
+      },
       {
         title: '友链',
         icon: h(FaSolidUserFriends),
