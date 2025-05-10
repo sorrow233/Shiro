@@ -45,17 +45,18 @@ export const headerMenuConfig: IHeaderMenu[] = [
     path: '/thinking',
   },
   {
-    title: '一言',
-    path: '/says',
-    icon: h(FaSolidComments),
-  },
-  {
     title: '手记',
     type: 'Note',
     path: '/notes',
     icon: h(FaSolidFeatherAlt),
     exclude: ['/notes/topics'],
   },
+  {
+    title: '一言',
+    path: '/says',
+    icon: h(FaSolidComments),
+  },
+
 
   {
     title: '更多',
