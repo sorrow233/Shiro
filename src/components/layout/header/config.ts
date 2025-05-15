@@ -26,11 +26,9 @@ export interface IHeaderMenu {
 }
 export const headerMenuConfig: IHeaderMenu[] = [
   {
-    title: '首页',
-    path: '/',
-    type: 'Home',
-    icon: h(FaSolidDotCircle),
-    subMenu: [],
+    title: '思考',
+    icon: h(MdiLightbulbOn20),
+    path: '/thinking',
   },
   {
     title: '文稿',
@@ -38,11 +36,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
     type: 'Post',
     subMenu: [],
     icon: h(IcTwotoneSignpost),
-  },
-  {
-    title: '思考',
-    icon: h(MdiLightbulbOn20),
-    path: '/thinking',
   },
   {
     title: '手记',
@@ -56,8 +49,13 @@ export const headerMenuConfig: IHeaderMenu[] = [
     path: '/says',
     icon: h(FaSolidComments),
   },
-
-
+  {
+    title: '关于',
+    path: '/',
+    type: 'Home',
+    icon: h(FaSolidDotCircle),
+    subMenu: [],
+  },
   {
     title: '更多',
     icon: h(FaSolidCircleNotch),
